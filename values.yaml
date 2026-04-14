@@ -3,4 +3,4 @@ Service:
 deployment:
   replicas: "1"
   changeCause: "movind to 1.29-trixe"
-  imageVersion: "1.29-trixe"
+  imageVersion: "1.29-trixie"
