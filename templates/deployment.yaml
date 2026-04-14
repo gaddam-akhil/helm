@@ -10,6 +10,7 @@ metadata:
     component: frontend
   annotations:
     kubernetes.io/change-cause: {{ .Values.deployment.changeCause | quote }}
+    #kubernetes.io/change-cause: {{ .Values.deployment.changeCause | quote }}
 spec:
   replicas: {{ .Values.deployment.replicas }}
   selector:
