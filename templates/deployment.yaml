@@ -8,7 +8,7 @@ metadata:
     tier: frontend
     component: frontend
   annotations: 
-    kubernetes.io/change-cause: {{ .values.Deployment.change-cause }} 
+    kubernetes.io/change-cause: {{ .values.Deployment.changeCause }} 
 spec:
     replicas: {{ .values.deployment.replicas }}
      # using these labels replica set selects the pod
