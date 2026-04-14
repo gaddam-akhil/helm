@@ -1,0 +1,6 @@
+Service:
+  type: "LoadBalancer"
+deployment:
+  replicas: "1"
+  change-cause: "movind to 1.29.7"
+  imageVersion: "latest"
