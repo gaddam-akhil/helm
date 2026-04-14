@@ -2,5 +2,5 @@ Service:
   type: "LoadBalancer"
 deployment:
   replicas: "1"
-  change-cause: "movind to 1.29-trixe"
+  changeCause: "movind to 1.29-trixe"
   imageVersion: "1.29-trixe"
