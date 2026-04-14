@@ -8,9 +8,9 @@ metadata:
     tier: frontend
     component: frontend
   annotations: 
-    kubernetes.io/change-cause: {{ .values.deployment.changeCause }}
+    kubernetes.io/change-cause: {{ .Values.deployment.changeCause }}
 spec:
-    replicas: {{ .values.deployment.replicas }}
+    replicas: {{ .Values.deployment.replicas }}
      # using these labels replica set selects the pod
     selector:
       matchLabels:  
@@ -29,4 +29,4 @@ spec:
       spec:
         containers:
         - name: nginx
-          image: nginx:{{ .values.deployment.imageVersion }}    
+          image: nginx:{{ .Values.deployment.imageVersion }}    
