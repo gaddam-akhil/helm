@@ -1,5 +1,5 @@
 Service:
-  type: "LoadBalancer"
+  type: LoadBalancer
 deployment:
   replicas: "1"
   changeCause: "movind to 1.29-trixe"
